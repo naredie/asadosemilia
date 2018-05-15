@@ -193,6 +193,15 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 0;
 	margin-bottom: 10px;
 }
+
+.intro h2 {
+	font-family: 'Dancing Script', cursive;
+	color: #fff;
+	font-size: 8em;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
 .intro span {
 	color: #a7c44c;
 	font-weight: 600;
