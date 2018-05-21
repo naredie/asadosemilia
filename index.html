@@ -53,9 +53,38 @@
 
   gtag('config', 'UA-119038501-1');
 </script>
+	
+	<!-- SCRIPT CONTROL DE COOKIES -->
+<script type="text/javascript">
+function controlcookies() {
+         // si variable no existe se crea (al clicar en Aceptar)
+    localStorage.controlcookie = (localStorage.controlcookie || 0);
+ 
+    localStorage.controlcookie++; // incrementamos cuenta de la cookie
+    cookie1.style.display='none'; // Esconde la política de cookies
+}
+</script>
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	
+	<!--Código HTML de la política de cookies -->
+ 
+<!--La URL incluida es la parte que se ha de modificar -->
+ 
+<div class="cookiesms" id="cookie1">
+Esta web utiliza cookies, puedes ver nuestra  <a href="tu-url-donde-explicas-la-politica-de-cookies"> política de cookies, aquí</a> 
+<button onclick="controlcookies()">Aceptar</button>
+<div  class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Política de cookies + </div>
+</div>
+<script type="text/javascript">
+if (localStorage.controlcookie>0){ 
+document.getElementById('cookie1').style.bottom = '-50px';
+}
+</script>
+ 
+<!-- Fin del código de cookies --->
+	
 <!-- Navigation
     ==========================================-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
